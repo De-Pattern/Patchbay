@@ -102,20 +102,6 @@ desktop/                Electron wrapper for the Windows build
 .github/workflows/      builds the Windows app when a version tag is pushed
 ```
 
-## Making changes
-
-Edit `index.html` and push to `main`. GitHub Pages republishes the site within a minute or two. When you change `index.html`, also bump `VERSION` in `sw.js` so installed copies pick up the update.
-
-To publish a new Windows build, bump `"version"` in `desktop/package.json` (for example `1.0.0` → `1.0.1`) and push to `main`. The **Build desktop app** workflow sees there's no release for that version yet, builds the installer, and publishes a new release with a matching `v1.0.1` tag. Pushes that don't change the version skip the build.
-
-To run the desktop app locally (needs Node.js 20+):
-
-```bash
-cd desktop
-npm install
-npm start
-```
-
 ## License
 
 MIT

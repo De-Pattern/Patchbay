@@ -32,8 +32,8 @@ A diagram editor for mapping hardware studio rigs: synths, mixers, aux sends and
 | Back to automatic routing | Clear bends in the cable panel |
 | Add / move / remove a bend (straight and curved cables) | Drag ＋ on a selected cable / drag the bend / double-click it |
 | Duplicate while dragging | Alt + drag |
-| Edit text | Double-click a block (Ctrl+Enter or Esc to finish) |
-| New block | Double-click empty space, or the Block tool (R) |
+| Edit text | Double-click a block: its text is selected, or the cursor waits in an empty block (Ctrl+Enter or Esc to finish) |
+| New block | N adds one at the cursor (Ctrl+1 in the desktop app), or click or drag with the Block tool (R) |
 | Name a cable | Double-click the cable |
 | Pan / zoom | Space + drag or middle mouse / Ctrl + scroll wheel |
 | Copy, paste, duplicate | Ctrl+C, Ctrl+V, Ctrl+D |
@@ -100,6 +100,20 @@ sw.js                   offline cache
 icons/                  app icons
 desktop/                Electron wrapper for the Windows build
 .github/workflows/      builds the Windows app when a version tag is pushed
+```
+
+## Making changes
+
+Edit `index.html` and push to `main`. GitHub Pages republishes the site within a minute or two. When you change `index.html`, also bump `VERSION` in `sw.js` so installed copies pick up the update.
+
+To publish a new Windows build, bump `"version"` in `desktop/package.json` (for example `1.0.0` → `1.0.1`) and push to `main`. The **Build desktop app** workflow sees there's no release for that version yet, builds the installer, and publishes a new release with a matching `v1.0.1` tag. Pushes that don't change the version skip the build.
+
+To run the desktop app locally (needs Node.js 20+):
+
+```bash
+cd desktop
+npm install
+npm start
 ```
 
 ## License

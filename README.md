@@ -5,10 +5,12 @@ A diagram editor for mapping hardware studio rigs: synths, mixers, aux sends and
 **Open it:** https://de-pattern.github.io/Patchbay/
 **Windows app:** [latest release](https://github.com/De-Pattern/Patchbay/releases/latest)
 
-![Example board: synths into a ZED-R16 mixer with aux loops, then Octatrack, compressor and interface, grouped into sections with a colour-coded cable legend](docs/example-board.png)
+
 
 ## What it does
-
+<br>
+![Example board: synths into a ZED-R16 mixer with aux loops, then Octatrack, compressor and interface, grouped into sections with a colour-coded cable legend](docs/example-board.png)
+<br>
 - **Blocks** for each piece of gear: box, rounded, pill, ellipse or plain text, with any fill, outline, text colour, S/M/L text, bold, and left or centred alignment.
 - **Cables** that attach to blocks and follow them when you move things. Drag one of the dots on a block's edge to start a cable and drop it on another block.
 - **Exact connections.** A normal drop snaps to the middle of the nearest side. Hold **Ctrl** while dropping to attach at the exact spot on the edge.

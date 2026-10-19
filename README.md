@@ -1,5 +1,5 @@
 # Patchbay
-
+<img src="PatchBayTHUMBNAIL-DESIGN.png" alt="Patchbay Logo Design" width="900">
 A diagram editor for mapping hardware studio rigs: synths, mixers, aux sends and returns, samplers, interfaces, and every cable in between.
 
 **Open it:** https://de-pattern.github.io/Patchbay/

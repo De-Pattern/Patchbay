@@ -9,7 +9,7 @@ A diagram editor for mapping hardware studio rigs: synths, mixers, aux sends and
 
 ## What it does
 <br>
-![Example board: synths into a ZED-R16 mixer with aux loops, then Octatrack, compressor and interface, grouped into sections with a colour-coded cable legend](docs/example-board.png)
+ <img src="docs/example-board.png" alt="example board" width="900">
 <br>
 - **Blocks** for each piece of gear: box, rounded, pill, ellipse or plain text, with any fill, outline, text colour, S/M/L text, bold, and left or centred alignment.
 - **Cables** that attach to blocks and follow them when you move things. Drag one of the dots on a block's edge to start a cable and drop it on another block.

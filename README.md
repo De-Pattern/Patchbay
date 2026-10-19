@@ -8,9 +8,8 @@ A diagram editor for mapping hardware studio rigs: synths, mixers, aux sends and
 
 
 ## What it does
-<br>
  <img src="docs/example-board.png" alt="example board" width="900">
-<br>
+
 - **Blocks** for each piece of gear: box, rounded, pill, ellipse or plain text, with any fill, outline, text colour, S/M/L text, bold, and left or centred alignment.
 - **Cables** that attach to blocks and follow them when you move things. Drag one of the dots on a block's edge to start a cable and drop it on another block.
 - **Exact connections.** A normal drop snaps to the middle of the nearest side. Hold **Ctrl** while dropping to attach at the exact spot on the edge.
